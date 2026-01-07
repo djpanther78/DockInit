@@ -29,11 +29,11 @@ _log() {
   ts=$(date +"%Y-%m-%d %H:%M:%S")
 
   case "$level" in
-    debug)   printf "\033[90m[%s] [DEBUG]   %s\033[0m\n" "$ts" "$msg" ;;
-    info)    printf "\033[36m[%s] [INFO]    %s\033[0m\n" "$ts" "$msg" ;;
-    warn)    printf "\033[33m[%s] [WARN]    %s\033[0m\n" "$ts" "$msg" ;;
-    error)   printf "\033[31m[%s] [ERROR]   %s\033[0m\n" "$ts" "$msg" ;;
-    success) printf "\033[32m[%s] [SUCCESS] %s\033[0m\n" "$ts" "$msg" ;;
+    debug)   printf "\033[90m[%s] [DEBUG]     %s\033[0m\n" "$ts" "$msg" ;;
+    info)    printf "\033[36m[%s] [INFO]      %s\033[0m\n" "$ts" "$msg" ;;
+    warn)    printf "\033[33m[%s] [WARN]      %s\033[0m\n" "$ts" "$msg" ;;
+    error)   printf "\033[31m[%s] [ERROR]     %s\033[0m\n" "$ts" "$msg" ;;
+    success) printf "\033[32m[%s] [SUCCESS]   %s\033[0m\n" "$ts" "$msg" ;;
   esac
 }
 
